@@ -11,7 +11,7 @@ export class InfoPaginaService {
 
   info: InfoPagina = {};
   cargada = false;
-  equipo: any[] = [];
+  equipo: EquipoPagina;
 
   constructor( private http: HttpClient) { 
     this.cargarInfo();
@@ -21,11 +21,8 @@ export class InfoPaginaService {
   private cargarInfo(){
     this.http.get('assets/data/data-pagina.json')
       .subscribe( (resp: InfoPagina) => {
-
         this.cargada = true;
         this.info = resp;
-
-        console.log( resp );
       });
   }
 
@@ -33,7 +30,8 @@ export class InfoPaginaService {
     this.http.get('https://portfolio-c84ef.firebaseio.com/equipo.json')
       .subscribe( (resp: EquipoPagina) => {
         console.log( resp)
+        this.equipo = resp;
       })
-    //this.equipo = resp;
+
   }
 }
