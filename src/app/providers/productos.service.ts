@@ -12,7 +12,6 @@ export class ProductosService {
   cargando = true;
   productos: ProductosPagina[] = [];
 
-
   constructor( private http: HttpClient ) {
     this.cargarProductos();
   }
@@ -26,6 +25,10 @@ export class ProductosService {
         this.cargando = false;
 
       } )
+  }
+
+  public getProducto( id: string ){
+    return this.http.get(`https://portfolio-c84ef.firebaseio.com/productos/${id}.json`);
   }
 
 
