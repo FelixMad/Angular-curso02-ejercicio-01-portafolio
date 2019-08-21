@@ -15,6 +15,7 @@ import { ProductoPagina } from '../../interfaces/producto-pagina.interface';
 })
 export class ItemComponent implements OnInit {
 
+  cargando = true;
   producto: ProductoPagina[] = [];
 
   constructor(  private route: ActivatedRoute,
@@ -28,6 +29,7 @@ export class ItemComponent implements OnInit {
           .subscribe( (resp: ProductoPagina) => {
             console.log(resp);
             this.producto = resp;
+            this.cargando = false;
           });
       })
   }
