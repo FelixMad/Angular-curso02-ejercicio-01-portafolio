@@ -23,8 +23,8 @@ export class ProductosService {
       .subscribe( (resp: ProductosPagina) => {
 
         this.productos = resp;
-
         this.cargando = false;
+
       } )
   }
 
