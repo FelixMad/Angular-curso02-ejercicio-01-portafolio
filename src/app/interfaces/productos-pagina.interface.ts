@@ -1,0 +1,6 @@
+export interface ProductosPagina {
+  categoria: string;
+  cod: string;
+  titulo: string;
+  url: string;
+}
