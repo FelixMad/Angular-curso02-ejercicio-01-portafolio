@@ -19,7 +19,7 @@ export class ProductosService {
   private cargarProductos(){
 
     this.http.get('https://portfolio-c84ef.firebaseio.com/productos_idx.json')
-      .subscribe( (resp: ProductosPagina) => {
+      .subscribe( (resp: ProductosPagina[]) => {
 
         this.productos = resp;
         this.cargando = false;
