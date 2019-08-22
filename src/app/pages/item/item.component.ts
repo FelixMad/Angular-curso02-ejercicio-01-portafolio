@@ -16,7 +16,8 @@ import { ProductoPagina } from '../../interfaces/producto-pagina.interface';
 export class ItemComponent implements OnInit {
 
   cargando = true;
-  producto: ProductoPagina[] = [];
+  producto: ProductoPagina;
+  id: string;
 
   constructor(  private route: ActivatedRoute,
                 public productoService: ProductosService) { }
@@ -26,7 +27,8 @@ export class ItemComponent implements OnInit {
     this.route.params
       .subscribe( paramentros => {
         this.productoService.getProducto(paramentros['id'])
-          .subscribe( (resp: ProductoPagina[]) => {
+          .subscribe( (resp: ProductoPagina) => {
+            this.id = paramentros['id'];
             console.log(resp);
             this.producto = resp;
             this.cargando = false;
