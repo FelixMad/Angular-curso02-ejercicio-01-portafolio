@@ -29,7 +29,6 @@ export class ItemComponent implements OnInit {
         this.productoService.getProducto(paramentros['id'])
           .subscribe( (resp: ProductoPagina) => {
             this.id = paramentros['id'];
-            console.log(resp);
             this.producto = resp;
             this.cargando = false;
           });
