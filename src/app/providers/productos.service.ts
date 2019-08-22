@@ -11,7 +11,6 @@ export class ProductosService {
 
   cargando = true;
   productos: ProductosPagina[] = [];
-  productosFiltrado: ProductosPagina[] = [];
 
   constructor( private http: HttpClient ) {
     this.cargarProductos();
@@ -30,13 +29,6 @@ export class ProductosService {
 
   public getProducto( id: string ){
     return this.http.get(`https://portfolio-c84ef.firebaseio.com/productos/${id}.json`);
-  }
-
-  public buscarProducto( termino: string ){
-    this.productosFiltrado = this.productos.filter( producto => {
-      return true;
-    });
-    console.log( this.productosFiltrado )
   }
 
 
