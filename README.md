@@ -36,7 +36,7 @@ Espero lo disfrutes mucho.
 * No es necesario saber GitHub
 * No es necesario tener un un domino web
 
-##¿Para quién es este curso?
+## ¿Para quién es este curso?
 * Cualquier persona que conozca un poco de Angular
 * Cualquier persona que desee aprender un poco de Git, GitHub, Angular y Firebase
 * Cualquier persona con deseos de aprender un poco más
