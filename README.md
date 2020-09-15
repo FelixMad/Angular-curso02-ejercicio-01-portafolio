@@ -1,3 +1,6 @@
+https://console.firebase.google.com/project/portfolio-c84ef/overview
+
+
 Este curso se enfoca en enseñar como **convertir una plantilla HTML a una aplicación de Angular**, usando Firebase como backend, desplegando el sitio web en GitHub Pages y utilizando Git como repositorio.
 
 El curso es **totalmente gratuito** y tiene como objetivo ayudarte en tu conocimiento de Angular, Firebase y otras herramientas que pueden interesarte mucho. Nos enfocaremos en aprender haciendo, **crearemos todo de cero**, eso incluye la configuración de la base de datos y los repositorios para trabajar en GitHub y Git. Hay un par de tareas y ejercicios que te pondrán a prueba, pero siempre con las soluciones al siguiente video.
