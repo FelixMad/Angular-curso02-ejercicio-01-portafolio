@@ -1,5 +1,6 @@
-https://console.firebase.google.com/project/portfolio-c84ef/overview
+Videos del tutorial de Udemy https://www.udemy.com/course/html-hacia-angular
 
+Consola de Firebase del proyecto https://console.firebase.google.com/project/portfolio-c84ef/overview
 
 Este curso se enfoca en enseñar como **convertir una plantilla HTML a una aplicación de Angular**, usando Firebase como backend, desplegando el sitio web en GitHub Pages y utilizando Git como repositorio.
 
